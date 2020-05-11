@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>BaliMandara.com</title>
+		<link href="../css/javajam.css2.css.css" rel="stylesheet">
+    <style>
+  	 #msg {
+  	    visibility: hidden;
+  	    min-width: 250px;
+  	    background-color: #A969EF;
+  	    color: white;
+  	    text-align: center;
+  	    border-radius: 22px;
+  	    padding: 5px;
+  	    position: fixed;
+  	    z-index: 1;
+  	    right: 39%;
+  	    top: 30px;
+  	    font-size: 17px;
+  	    margin-right:25px;
+		}
+
+		#msg.show {
+		   visibility: visible;
+		   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+
+		@-webkit-keyframes fadein {
+		   from {top: 0; opacity: 0;}
+		   to {top: 30px; opacity: 1;}
+		}
+
+		@keyframes fadein {
+		   from {top: 0; opacity: 0;}
+		   to {top: 30px; opacity: 1;}
+		}
+
+		@-webkit-keyframes fadeout {
+		   from {top: 30px; opacity: 1;}
+		   to {top: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+		   from {top: 30px; opacity: 1;}
+		   to {top: 0; opacity: 0;}
+		}
+	</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1><br> BALI <br><br> Island of Paradise</h1>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="Tolerance.html">Tolerance</a></li>
+						<li><a href="Culture.html">Culture</a></li>
+						<li><a href="Video.html">Video</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+						<li><a href="Suksma.html">Suksma</a></li>
+					</ul>
+				</nav>
+			</header>
+	  	  <section class="courses">
+	  	  <h2>Thank You</h2>
+				<article>
+					<figure>
+						<img src="../Image/barong-kartun.jpg" alt="barong" />
+						<figcaption>Dumogi Sami Rahayu</figcaption>
+					</figure>
+					<p>Culture, nature, art and all the views of harmony of life, you can find it here. <br>~Bali</p>
+				</article>    
+				<article>
+					<figure>
+						<img src="../Image/barong-kartun123.jpg" alt="barong" />
+						<figcaption>Rahajeng Sareng Sami</figcaption>
+					</figure>
+					<p>Mountains, valley, river, hill, beache, sea, rice fields, all are waiting for you <br>~Bali</p>
+				</article>
+			</section>
+		  	
+	  	  <aside class="countainer">
+		  		<form>
+				<section>
+				<label for="fname">First Name</label><br>
+    			<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+				<label for="lname">Last Name</label><br>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+				</section>
+				<section>
+				  <select id="country" name="country">
+					  <option value="australia">Australia</option>
+					  <option value="canada">Canada</option>
+					  <option value="usa">USA</option>
+					  <option value="Malaysia">Malayasia</option>
+					  <option value="singapore">Singapore</option>
+					  <option value="indonesia">Indonesia</option>
+					  <option value="philippines">Philippines</option>
+					  <option value="thailand">Thailand</option>
+					  <option value="japan">Japan</option>
+					</select>
+					<br>
+					<label for="subject">Subject</label>
+					<br>
+				  <textarea id="subject" name="subject" placeholder="Please feel free to contact us, dont forget to add your e-Mail and phone number here... AlamAdventure(0371)456144" style="height:200px"></textarea>
+				  
+				  <input type="button" value="Submit" class="buttonsubs" onclick="myFunction()">
+        <div id="msg"> SUKSMA <br> See You In BALI</div>
+				</section>
+				</form>
+				<script>
+					    	function myFunction() {
+    		var x = document.getElementById("msg");
+    		x.className = "show";
+    		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    	}
+				</script> 
+		  </aside>
+			
+			<footer>
+				Copyright &copy;BaliTourism 2020 <br>
+				Jimbaran, Kuta Selatan, Badung
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
+</html>
